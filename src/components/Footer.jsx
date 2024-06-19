@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
 return (
     <footer>
-        <p>&copy; Bire Bir Eğitimler. Tüm hakları saklıdır.</p>
+        <p>&copy; Bire Bir Eğitimler {new Date().getFullYear()}. Tüm hakları saklıdır.</p>
     </footer>
 )
 }
