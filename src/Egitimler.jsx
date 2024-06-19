@@ -26,7 +26,7 @@ export default function Egitimler() {
             </Helmet>
             <h1>Eğitimler</h1>
             <p>Eğitim sayfasına hoş geldiniz!</p>
-            <p>Aşağıda, bire bir olarak verdiğim eğitimler hakkında detaylı bilgiler bulacaksınız. Dilediğiniz eğitimin altında yer alan <strong>Randövu Oluştur</strong> düğmesini kullanarak, kendi programınıza en uygun saati rezerve edebilirsiniz.</p>
+            <p>Aşağıda, bire bir olarak verdiğim eğitimler hakkında detaylı bilgiler bulacaksınız. Dilediğiniz eğitimin altında yer alan <strong>Randevu Oluştur</strong> düğmesini kullanarak, kendi programınıza en uygun saati rezerve edebilirsiniz.</p>
             <Accordion defaultActiveKey="0">
                 {seanslar.map((egitim, index) => (
                     <Accordion.Item eventKey={egitim.url} key={index}>
@@ -34,13 +34,13 @@ export default function Egitimler() {
                         <Accordion.Body>
                             <section title={egitim.ad}>
                                 {parse(egitim.aciklama)}
-                                <Button variant="primary" onClick={() => handleShow(index)}>Randövu Oluştur: {egitim.ad}</Button>
+                                <Button variant="primary" onClick={() => handleShow(index)}>Randevu Oluştur: {egitim.ad}</Button>
                                 <Modal show={show === index} onHide={handleClose} fullscreen>
                                     <Modal.Header closeButton closeLabel="Kapat">
-                                        <Modal.Title>Randövu Oluştur: {egitim.ad}</Modal.Title>
+                                        <Modal.Title>Randevu Oluştur: {egitim.ad}</Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <p autoFocus>aşağıdaki takvimden randövunuzu oluşturun.</p>
+                                        <p autoFocus>aşağıdaki takvimden randevunuzu oluşturun.</p>
                                         <CalEmbed CalURL={egitim.url} />
                                     </Modal.Body>
                                 </Modal>
