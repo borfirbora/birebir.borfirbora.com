@@ -7,6 +7,7 @@ export default function Anasayfa() {
         <Helmet>
             <title>Anasayfa - Bire Bir Eğitimler</title>
         </Helmet>
+        <h1>Anasayfa</h1>
         </>
     )
 }
