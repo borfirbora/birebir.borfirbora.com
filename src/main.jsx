@@ -7,11 +7,13 @@ import Crypto from "./Crypto"
 import OturumTamamla from "./OturumTamamla"
 import Hakkimda from "./Hakkimda"
 import Egitimler from "./Egitimler"
+import Anasayfa from "./Anasayfa"
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter basename='/'>
     <Routes>
       <Route element={<App />}>
-        <Route path='/' element={<Crypto />} />
+        <Route path='/' element={<Anasayfa />} />
         <Route path='/hakkimda' element={<Hakkimda />} />
         <Route path='/egitimler' element={<Egitimler />} />
         <Route path='/oturum-tamamla' element={<OturumTamamla />} />
