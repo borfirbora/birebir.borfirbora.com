@@ -8,6 +8,7 @@ import OturumTamamla from "./OturumTamamla"
 import Hakkimda from "./Hakkimda"
 import Egitimler from "./Egitimler"
 import Anasayfa from "./Anasayfa"
+import Iletisim from "./Iletisim"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter basename='/'>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/' element={<Anasayfa />} />
         <Route path='/hakkimda' element={<Hakkimda />} />
         <Route path='/egitimler' element={<Egitimler />} />
+        <Route path='/iletisim' element={<Iletisim />} />
         <Route path='/oturum-tamamla' element={<OturumTamamla />} />
       </Route>
 
