@@ -6,7 +6,11 @@ export default function OturumTamamla() {
     const months = ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
     const prices = {
         "nvda-seansi": "300,00₺",
-        "reaper-seansi": "300,00₺"
+        "reaper-seansi": "300,00₺",
+        "javascript-seansi": "300,00₺",
+        "uygulama-seansi": "300,00₺",
+        "web-seansi": "300,00₺",
+        "python-seansi": "300,00₺"
     }
     const location = useLocation()
     const parems = new URLSearchParams(location.search)
