@@ -43,7 +43,6 @@ export default function ContactForm() {
           <Form.Label>Mesajınız</Form.Label>
           <Form.Control as="textarea" placeholder="Mesajınızı yazın" name="message" required value={formState.message} onChange={handleChange} />
         </Form.Group>
-        <div class="g-recaptcha" data-sitekey="6Lf9ov8pAAAAAM5sWXmC5gpN072qvKJpzwd_8q1k"></div>
         <Button variant="primary" type="submit">
           Gönder
         </Button>
