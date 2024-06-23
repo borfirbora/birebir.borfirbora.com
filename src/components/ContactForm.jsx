@@ -24,6 +24,7 @@ export default function ContactForm() {
         e.preventDefault()
         await submit(formState)
         alert(`Sayın ${formState.name}!\nMesajınız başarılı bir şekilte iletildi. Benimle iletişime geçtiğiniz için teşekkürler.`)
+        setFormState({email: "", message: "", name: ""})
       }}>
         <Form.Group controlId="eposta">
           <Form.Label>E-posta Adresiniz</Form.Label>
@@ -43,7 +44,7 @@ export default function ContactForm() {
           <Form.Label>Mesajınız</Form.Label>
           <Form.Control as="textarea" placeholder="Mesajınızı yazın" name="message" required value={formState.message} onChange={handleChange} />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="primary" type="submit" disabled={submiting || !formState.email || !formState.message || !formState.name}>
           Gönder
         </Button>
       </Form>
