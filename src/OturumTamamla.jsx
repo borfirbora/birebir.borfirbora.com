@@ -34,15 +34,15 @@ export default function OturumTamamla() {
                 <tbody>
                     <tr>
                         <td>IBAN</td>
-                        <td>Bora FIRLANGEÇ<br /><button onClick={e => navigator.clipboard.writeText(e.target.innerHTML)} title="Kopyalamak için tıklayın">TR710082900009491466029229</button></td>
+                        <td>Bora FIRLANGEÇ<br /><button onClick={e => {navigator.clipboard.writeText(e.target.innerHTML);alert("IBAN'ımı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.")}} title="Kopyalamak için tıklayın">TR710082900009491466029229</button></td>
                     </tr>
                     <tr>
                         <td>Papara</td>
-                        <td><button onClick={e => navigator.clipboard.writeText(e.target.innerHTML)} title="Kopyalamak için tıklayın">1466029229</button></td>
+                        <td><button onClick={e => {navigator.clipboard.writeText(e.target.innerHTML);alert("Papara numaramı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.")}} title="Kopyalamak için tıklayın">1466029229</button></td>
                     </tr>
                     <tr>
                         <td>İninal</td>
-                        <td><button onClick={e => navigator.clipboard.writeText(e.target.innerHTML)} title="Kopyalamak için tıklayın">1884305633771</button></td>
+                        <td><button onClick={e => {navigator.clipboard.writeText(e.target.innerHTML);alert("İninal Numaramı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.")}} title="Kopyalamak için tıklayın">1884305633771</button></td>
                     </tr>
                 </tbody>
             </table>
