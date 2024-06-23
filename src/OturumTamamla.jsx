@@ -34,7 +34,7 @@ export default function OturumTamamla() {
                 <tbody>
                     <tr>
                         <td>IBAN</td>
-                        <td>Bora FIRLANGEÇ<br />Akbank T.A.Ş<br /><button onClick={e => navigator.clipboard.writeText(e.target.innerHTML)} title="Kopyalamak için tıklayın">TR780004600746888000208010</button></td>
+                        <td>Bora FIRLANGEÇ<br /><button onClick={e => navigator.clipboard.writeText(e.target.innerHTML)} title="Kopyalamak için tıklayın">TR710082900009491466029229</button></td>
                     </tr>
                     <tr>
                         <td>Papara</td>
@@ -43,10 +43,6 @@ export default function OturumTamamla() {
                     <tr>
                         <td>İninal</td>
                         <td><button onClick={e => navigator.clipboard.writeText(e.target.innerHTML)} title="Kopyalamak için tıklayın">1884305633771</button></td>
-                    </tr>
-                    <tr>
-                        <td>Kredi/Banka Kartı</td>
-                        <td>&nbsp;</td>
                     </tr>
                 </tbody>
             </table>
