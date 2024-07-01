@@ -17,18 +17,19 @@ export default function OturumTamamla() {
     const startTime = dateFormat(parems.get("startTime"))
     const title = parems.get("title");
     const name = title.match(/ve\s+(.*?)\s+arasındaki/)[1]
+    const rescheduleUid = parems.get("rescheduleUid")
     return (
         <>
             <Helmet>
-                <title>{parems.get("title")} oturumu oluşturulmak üzere!</title>
+                <title>{parems.get("title")} oturumu {rescheduleUid ? "Yeniden Planlanmak" : "Oluşturulmak"} üzere!</title>
             </Helmet>
-            <h1><b>{parems.get("title")}</b> oturumu oluşturulmak üzere!</h1>
+            <h1><b>{parems.get("title")}</b> oturumu {rescheduleUid ? "Yeniden Planlanmak" : "Oluşturulmak"} üzere!</h1>
             <p>
                 Sayın <span>{name}</span>;<br />
-                <strong>{parems.get("title")}</strong> isimli oturumunuz, <strong>{startTime.day} {months[startTime.month]} {startTime.year}</strong> tarihi ve <strong>{startTime.hours}:00</strong> saatinde başlayacak şekilde planlanmak üzere..
+                <strong>{parems.get("title")}</strong> isimli oturumunuz, <strong>{startTime.day} {months[startTime.month]} {startTime.year}</strong> tarihi ve <strong>{startTime.hours}:00</strong> saatinde başlayacak şekilde {rescheduleUid ? "Yeniden Planlanmak" : "Oluşturulmak"} üzere..
             </p>
             <p>
-                Artık tek yapmanız gereken, Aşağıdaki ödeme platformlarından herhangi birisine eğitim ücretini yatırmak. Ardından <strong>Onay E-postası</strong> tarafınıza <mark>({parems.get("email")})</mark> iletilecek ve oturum saatiniz tamamen sizin olacak.
+                Artık tek yapmanız gereken, {rescheduleUid ? "eğer yapmadıysanız," : ""} Aşağıdaki ödeme platformlarından herhangi birisine eğitim ücretini yatırmak. Ardından <strong>Onay E-postası</strong> tarafınıza <mark>({parems.get("email")})</mark> iletilecek ve oturum saatiniz tamamen sizin olacak.
             </p>
             <h2>Ödeme Yöntemleri</h2>
             <table>
