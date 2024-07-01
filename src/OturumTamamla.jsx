@@ -15,6 +15,8 @@ export default function OturumTamamla() {
     const location = useLocation()
     const parems = new URLSearchParams(location.search)
     const startTime = dateFormat(parems.get("startTime"))
+    const title = parems.get("title");
+    const name = title.match(/ve\s+(.*?)\s+arasındaki/)[1]
     return (
         <>
             <Helmet>
@@ -22,7 +24,7 @@ export default function OturumTamamla() {
             </Helmet>
             <h1><b>{parems.get("title")}</b> oturumu oluşturulmak üzere!</h1>
             <p>
-                Sayın katılımcı;<br />
+                Sayın <span>{name}</span>;<br />
                 <strong>{parems.get("title")}</strong> isimli oturumunuz, <strong>{startTime.day} {months[startTime.month]} {startTime.year}</strong> tarihi ve <strong>{startTime.hours}:00</strong> saatinde başlayacak şekilde planlanmak üzere..
             </p>
             <p>
