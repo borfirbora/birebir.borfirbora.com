@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import CalEmbed from "./components/CalEmbed";
 import parse from "html-react-parser";
@@ -7,6 +7,8 @@ import { Accordion, Button, Modal } from "react-bootstrap";
 export default function Egitimler() {
     const [seanslar, setSeanslar] = useState([]);
     const [show, setShow] = useState(null);  // Her modal için farklı bir show state
+
+const calRef = useRef()
 
     const handleShow = (index) => setShow(index);
     const handleClose = () => setShow(null);
@@ -40,7 +42,6 @@ export default function Egitimler() {
                                         <Modal.Title>Randevu Oluştur: {egitim.ad}</Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        <p autoFocus>aşağıdaki takvimden randevunuzu oluşturun.</p>
                                         <CalEmbed CalURL={egitim.url} />
                                     </Modal.Body>
                                 </Modal>
