@@ -39,7 +39,7 @@ export default function Anasayfa() {
                 </Tab>
                 <Tab eventKey="iletisim" title="İletişim">
 <section title="İletişim">
-<p><Link to="/iletisim">İletişim</Link> sayfasında, bana ait çeşitli iletişim adreslerini bulacaksınız. Ayrıca, bu sayfada, bana ulaştırmak üzere doldurabileceğiniz bir iletişim formu da sağlıyor olacağım.</p>
+<p><Link to="/iletisim">İletişim</Link> sayfasında, bana ait çeşitli iletişim adreslerini bulacaksınız. Ayrıca bu sayfada, bana ulaştırmak üzere doldurabileceğiniz bir iletişim formu da sağlıyor olacağım.</p>
 </section>
                 </Tab>
             </Tabs>

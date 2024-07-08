@@ -35,7 +35,7 @@ export default function Hakkimda() {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="bildigim-diller">
-                    <Accordion.Header>Bildiğim Diller</Accordion.Header>
+                    <Accordion.Header>Bildiğim Programlama Dilleri</Accordion.Header>
                     <Accordion.Body>
                         <section title="Bildiğim Diller">
                             <Table responsive>
