@@ -7,10 +7,9 @@ export default function OturumTamamla() {
     const prices = {
         "nvda-seansi": "300,00₺",
         "reaper-seansi": "300,00₺",
-        "javascript-seansi": "300,00₺",
         "uygulama-seansi": "300,00₺",
         "web-seansi": "300,00₺",
-        "python-seansi": "300,00₺"
+        "programlama-seansi": "300,00₺"
     }
     const location = useLocation()
     const parems = new URLSearchParams(location.search)
