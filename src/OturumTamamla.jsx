@@ -34,7 +34,7 @@ export default function OturumTamamla() {
             <table>
                 <thead>
                     <tr>
-                        <th colSpan="2"><strong>{parems.get("title")}</strong> oturumu için belirlenen ücret: <strong>{prices[parems.get("eventTypeSlug")]}</strong></th>
+                        <th colSpan="2" role="alert"><strong>{parems.get("title")}</strong> oturumu için belirlenen ücret: <strong>{prices[parems.get("eventTypeSlug")]}</strong></th>
                     </tr>
                 </thead>
                 <tbody>
