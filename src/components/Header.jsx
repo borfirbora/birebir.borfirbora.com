@@ -7,22 +7,25 @@ function Header() {
 
     return (
         <>
-            <nav style={{position: "fixed", top: 0, width: "100%"}}>
+            <nav style={{ position: "fixed", top: 0, width: "100%" }}>
                 <ListGroup horizontal>
                     <ListGroup.Item as="li">
                         <Link to="/" aria-current={location.pathname === "/" ? "page" : undefined}>Anasayfa</Link>
-                </ListGroup.Item>
-                <ListGroup.Item as="li">
-                    <Link to="/egitimler" aria-current={location.pathname === "/egitimler" ? "page" : undefined}>Eğitimler</Link>
-                </ListGroup.Item>
-                <ListGroup.Item as="li">
-                    <Link to="/hakkimda" aria-current={location.pathname === "/hakkimda" ? "page" : undefined}>Hakkımda</Link>
-                </ListGroup.Item>
-                <ListGroup.Item as="li">
-                    <Link to="/iletisim" aria-current={location.pathname === "/iletisim" ? "page" : undefined}>İletişim</Link>
-                </ListGroup.Item>
-            </ListGroup>
-        </nav >
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li">
+                        <Link to="/egitimler" aria-current={location.pathname === "/egitimler" ? "page" : undefined}>Eğitimler</Link>
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li">
+                        <Link to="/sss" aria-current={location.pathname === "/sss" ? "page" : undefined}>Sıkça Sorulan Sorular</Link>
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li">
+                        <Link to="/hakkimda" aria-current={location.pathname === "/hakkimda" ? "page" : undefined}>Hakkımda</Link>
+                    </ListGroup.Item>
+                    <ListGroup.Item as="li">
+                        <Link to="/iletisim" aria-current={location.pathname === "/iletisim" ? "page" : undefined}>İletişim</Link>
+                    </ListGroup.Item>
+                </ListGroup>
+            </nav >
         </>
     );
 }
