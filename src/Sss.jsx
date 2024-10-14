@@ -43,7 +43,31 @@ export default function Sss() {
 					<p><b>Seans Türünüz</b> seçeneği, eğitiminizi işte bu şekilde etkiler.</p>
 				</Accordion.Body>
 			</Accordion.Item>
-
+			<Accordion.Item eventKey="s4">
+				<Accordion.Header>Eğitim Almak İçin Hangi Aşamalardan Geçmeliyim?</Accordion.Header>
+				<Accordion.Body>
+					<p>Öncelikle, Yukarıdaki menüde yer alan <b>Eğitimler</b> bağlantısından kendinize uygun bir eğitim seçerek başlamalısınız. Eğitimi genişleterek detaylı bilgileri aldıktan sonra, <strong>Randevu Oluştur</strong> butonu yardımıyla müsait zaman takvimine ulaşabilirsiniz.</p>
+					<p>Randevu ekranında sırasıyla aşağıdaki adımları kullanarak (ekran okuyucusu kullanıcıları) başarılı bir randevu oluşturma deneyimi yaşayabilirsiniz:</p>
+					<ListGroup as="ul" title="Randevu Oluşturma Adımları" numbered>
+						<ListGroup.Item as="li">Açılan iletişim kutusundaki çerçeveye <code>M</code> harfi ile odaklanılır;</ListGroup.Item>
+						<ListGroup.Item as="li">Bir kez <code>R</code> harfine basılarak <strong>12 sa</strong> seçim düğmesine ulaşılır;</ListGroup.Item>
+						<ListGroup.Item as="li"><code>Yukarı Ok</code> tuşuna bir kez basılır ve ilgili gün ve tarih duyulur (Örn: Cum 21);</ListGroup.Item>
+						<ListGroup.Item as="li">Eğer ilgilendiğiniz gün burada yazan gün değilse, <code>Shift+B</code> kısayol tuşları yardımıyla ayın ilgili günü bulunur ve etkinleştirilir. Ardından tekrar <code>R</code> harfi ile <strong>12 sa</strong> seçim düğmesine gidilir;</ListGroup.Item>
+						<ListGroup.Item as="li"><code>B</code> harfi yardımıyla, seçilen gün randevuya açık saatler arasında gezilebilir (önceki saat için <code>Shift</code> tuşu eklenmelidir). İlgilenilen saat etkinleştirilerek bir sonraki aşamaya geçilir;</ListGroup.Item>
+						<ListGroup.Item as="li">Sonrasında sayfanın başına ulaşmak için <code>Control+Home</code> tuşlarına basılır ve tekrar <code>M</code> harfi ile çerçeveye ulaşılır;</ListGroup.Item>
+						<ListGroup.Item as="li">Karşımıza çıkan formda yer alan sorular doğru şekilde cevaplanır ve sayfanın sonunda yer alan <strong>Onayla</strong> butonu yardımıyla randevu işlemi tamamlanır.</ListGroup.Item>
+					</ListGroup>
+					<p>Gerçekten siz olduğunuzu kanıtlamanız için, önceki adımda verdiğiniz e-posta adresine doğrulama e-postası gönderilecek ve sizden, gönderilen altı haneli kodu girmeniz istenecektir.</p>
+					<p>İşlemin başarılı bir şekilde tamamlanmasının ardından, sistem sizi onay sayfasına yönlendirecek ve bu sayfada ilgili ödeme bilgileri yer alıyor olacak.</p>
+					<p>Ödemenizin onaylanmasının ardından randevunuz kabul edilecek ve ilgili saatte eğitiminizi alabilir durumda olacaksınız.</p>
+				</Accordion.Body>
+			</Accordion.Item>
+			<Accordion.Item eventKey="s5">
+				<Accordion.Header>Eğitimim Tamamlandı. Şimdi Ne Olacak?</Accordion.Header>
+				<Accordion.Body>
+					<p>Eğitiminiz tamamlandığında sizlere bir geribildirim formu iletilecek. Buradan, eğitiminizi değerlendirebilir ve görüşlerinizi benimle paylaşabilirsiniz. Eğer seri eğitim aldıysanız, bir sonraki eğitim tarihinizi belirleyebilirsiniz.</p>
+				</Accordion.Body>
+			</Accordion.Item>
 		</Accordion>
 	</>)
 }
