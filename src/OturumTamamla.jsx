@@ -5,11 +5,11 @@ import { useLocation } from "react-router-dom";
 export default function OturumTamamla() {
     const months = ["", "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
     const prices = {
-        "nvda-seansi": "300,00₺",
-        "reaper-seansi": "300,00₺",
-        "uygulama-seansi": "300,00₺",
-        "web.seansi": "300,00₺",
-        "programlama-seansi": "300,00₺"
+        "nvda-seansi": "850,00₺",
+        "reaper-seansi": "850,00₺",
+        "uygulama-seansi": "850,00₺",
+        "web.seansi": "850,00₺",
+        "programlama-seansi": "850,00₺"
     }
     const location = useLocation()
     const parems = new URLSearchParams(location.search)
