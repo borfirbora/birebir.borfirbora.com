@@ -31,6 +31,7 @@ export default function OturumTamamla() {
                 Artık tek yapmanız gereken, {rescheduleUid ? "eğer yapmadıysanız," : ""} Aşağıdaki ödeme platformlarından herhangi birisine eğitim ücretini yatırmak. Ardından <strong>Onay E-postası</strong> tarafınıza <mark>({parems.get("email")})</mark> iletilecek ve oturum saatiniz tamamen sizin olacak.
             </p>
             <h2>Ödeme Yöntemleri</h2>
+            
             <table>
                 <thead>
                     <tr>
@@ -39,16 +40,20 @@ export default function OturumTamamla() {
                 </thead>
                 <tbody>
                     <tr>
+                        <td>Kredi/Banka Kartı</td>
+                        <td><a href="https://shopier.com/33843164" target="_blank" rel="noopener noreferrer">Kredi/Banka Kartıyla Almak İçin Tıklayın!</a></td>
+                    </tr>
+                    <tr>
                         <td>IBAN</td>
-                        <td>Bora FIRLANGEÇ<br /><button onClick={e => {navigator.clipboard.writeText(e.target.innerHTML);alert("IBAN'ımı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.")}} title="Kopyalamak için tıklayın">TR710082900009491466029229</button></td>
+                        <td>Bora FIRLANGEÇ<br /><button onClick={e => { navigator.clipboard.writeText(e.target.innerHTML); alert("IBAN'ımı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.") }} title="Kopyalamak için tıklayın">TR710082900009491466029229</button></td>
                     </tr>
                     <tr>
                         <td>Papara</td>
-                        <td><button onClick={e => {navigator.clipboard.writeText(e.target.innerHTML);alert("Papara numaramı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.")}} title="Kopyalamak için tıklayın">1466029229</button></td>
+                        <td><button onClick={e => { navigator.clipboard.writeText(e.target.innerHTML); alert("Papara numaramı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.") }} title="Kopyalamak için tıklayın">1466029229</button></td>
                     </tr>
                     <tr>
                         <td>İninal</td>
-                        <td><button onClick={e => {navigator.clipboard.writeText(e.target.innerHTML);alert("İninal Numaramı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.")}} title="Kopyalamak için tıklayın">1884305633771</button></td>
+                        <td><button onClick={e => { navigator.clipboard.writeText(e.target.innerHTML); alert("İninal Numaramı panonuza kopyaladım.\nÖdemenizi yaparken açıklama kısmına e-posta adresinizi yazmayı unutmayın.") }} title="Kopyalamak için tıklayın">1884305633771</button></td>
                     </tr>
                 </tbody>
             </table>
